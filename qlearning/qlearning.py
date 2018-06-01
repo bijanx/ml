@@ -167,8 +167,6 @@ import time
 import csv
 import argparse
 
-print(scipy.misc.imresize)
-
 ########################################################################
 # File-paths are global variables for convenience so they don't
 # have to be passed around between all the objects.
