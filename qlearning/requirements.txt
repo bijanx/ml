@@ -1,0 +1,9 @@
+tensorflow==1.1.0
+gym==0.10.5
+prettytensor
+scipy==1.1
+gym[atari]
+pillow
+jupyter
+ipykernel
+matplotlib
