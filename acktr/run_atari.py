@@ -9,7 +9,7 @@ from baselines.ppo2.policies import CnnPolicy
 
 from vec_frame_stack import VecFrameStack
 
-NUM_ENV = 1
+NUM_ENV = 10
 NUM_CPU = 32
 
 def train(env_id, num_timesteps, seed, num_cpu):
