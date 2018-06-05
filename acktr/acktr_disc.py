@@ -182,6 +182,7 @@ def learn(policy, env, seed, total_timesteps=int(40e6), gamma=0.99, log_interval
         model.old_obs = obs
         nseconds = time.time()-tstart
         fps = int((update*nbatch)/nseconds)
+        env.render()
         if update % log_interval == 0 or update == 1:
             ev = explained_variance(values, rewards)
             logger.record_tabular("nupdates", update)

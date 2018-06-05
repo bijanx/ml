@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-NUM_CPU = 4
+NUM_CPU = 12
+NUM_ENV = 250
 
 from baselines import logger
 from baselines.common.vec_env.vec_frame_stack import VecFrameStack
@@ -27,7 +28,7 @@ def main():
     args = parser.parse_args()
     logger.configure()
     train(args.env, num_timesteps=args.num_timesteps, seed=args.seed,
-        policy=args.policy, lrschedule=args.lrschedule, num_env=1)
+        policy=args.policy, lrschedule=args.lrschedule, num_env=NUM_ENV)
 
 if __name__ == '__main__':
     main()

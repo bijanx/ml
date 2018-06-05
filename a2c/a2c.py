@@ -148,8 +148,7 @@ def learn(policy, env, seed, nsteps=5, total_timesteps=int(80e6), vf_coef=0.5, e
         nseconds = time.time()-tstart
         fps = int((update*nbatch)/nseconds)
 
-        if update % 100:
-          print(env)
+        if update % 10:
           env.render()
 
         if update % log_interval == 0 or update == 1:
